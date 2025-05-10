@@ -1,0 +1,1143 @@
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #0091ea;
+}
+
+ul {
+    list-style: none;
+}
+
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #222;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #0091ea;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0077c7;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.btn-secondary:hover {
+    background-color: #f5f5f5;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    background-color: #0091ea;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #555;
+    font-weight: 500;
+}
+
+nav ul li a.active {
+    color: #0091ea;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 50px 5%;
+    background-color: #f5f9fc;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero h1 .dark {
+    color: #1a1a2e;
+}
+
+.hero h1 .highlight {
+    color: #0091ea;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 50px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* CTA Banner */
+.cta-banner {
+    background: linear-gradient(135deg, #0091ea, #64b5f6);
+    color: white;
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.cta-content p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.email-input {
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: none;
+    width: 300px;
+    font-size: 1rem;
+}
+
+/* Quick Links Section */
+.quick-links-section {
+    padding: 60px 5%;
+    background-color: #fff;
+}
+
+.quick-links-section .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quick-links-section .column {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.quick-links-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.quick-links-section p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.quick-links-section ul li {
+    margin-bottom: 10px;
+}
+
+/* Process Section */
+.process-section {
+    padding: 80px 5%;
+    background-color: #f9f9f9;
+}
+
+.process-steps {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.step {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.step-icon {
+    background-color: #0091ea;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin: 0 auto 20px;
+    font-weight: bold;
+}
+
+.step h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.step p {
+    color: #666;
+}
+
+/* Features Section */
+.features-section {
+    padding: 80px 5%;
+    background-color: #fff;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.feature {
+    flex: 1;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.feature-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #e3f2fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    font-size: 28px;
+    color: #0091ea;
+}
+
+.feature h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.feature p {
+    color: #666;
+}
+
+.dark-title {
+    color: #1a1a2e;
+    font-size: 2.5rem;
+}
+
+/* Comprehensive Management Section */
+.comprehensive-section {
+    padding: 80px 5%;
+    background-color: #f9f9f9;
+}
+
+.management-features {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.management-feature {
+    flex: 1;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #58b4f0; /* Blue color */
+    padding: 30px 5%;
+    text-align: center;
+    color: white; /* Change text color for better contrast */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .hero {
+        flex-direction: column;
+    }
+    
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+    
+    .process-steps,
+    .features,
+    .management-features,
+    .quick-links-section .container {
+        flex-direction: column;
+    }
+    
+    .step,
+    .feature,
+    .management-feature,
+    .quick-links-section .column {
+        margin-bottom: 30px;
+    }
+    
+    .email-input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo-container {
+        margin-bottom: 20px;
+    }
+    
+    nav {
+        margin: 15px 0;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero-image img {
+        max-width: 100%; /* Reset to 100% on smaller screens */
+    }
+}
+/* about diabetes */
+
+/* Main Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    background-color: #2a7fba;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.logo-text {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav a.active {
+    color: #2a7fba;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #2a7fba;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    padding: 50px 5%;
+    gap: 50px;
+    align-items: center;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #2a7fba;
+}
+
+/* Overview Section */
+.overview-section {
+    padding: 50px 5%;
+}
+
+.overview-section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.overview-content {
+    display: flex;
+    gap: 30px;
+}
+
+.overview-text {
+    flex: 2;
+}
+
+.overview-text p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.overview-video {
+    flex: 1;
+    position: relative;
+}
+
+.overview-video iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.video-fallback {
+    width: 100%;
+    height: 315px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Types Section */
+.types-section {
+    padding: 50px 5%;
+    background-color: #fff;
+}
+
+.types-section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.types-section p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Symptoms Section */
+.symptoms-section {
+    padding: 0 5% 50px;
+}
+
+.symptoms-banner {
+    background-color: #e6f0fa;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.symptoms-banner h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.symptoms-banner p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.symptoms-banner h3 {
+    font-size: 22px;
+    color: #2a7fba;
+    font-weight: bold;
+}
+
+/* Symptoms Cards */
+.symptoms-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px 0;
+}
+
+.symptom-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    min-width: 300px;
+    flex-shrink: 0;
+}
+
+.symptom-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.symptom-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.know-more-link {
+    display: inline-block;
+    color: #2a7fba;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.know-more-link:hover {
+    text-decoration: underline;
+}
+
+.symptom-number {
+    color: #999;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 50px 5%;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo .logo {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    color: #2a7fba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+.footer-description {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.footer-heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2a7fba;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 30px;
+    border-top: 1px solid #444;
+    color: #aaa;
+    font-size: 14px;
+}
+/* FAQ Section */
+.faq-hero {
+    padding: 60px 0;
+    background-color: #f1f5f9;
+}
+
+.faq-content {
+    padding: 0 10%;
+}
+
+.faq-grid {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.faq-photo {
+    flex: 1;
+}
+
+.photo-placeholder img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.faq-managing-diabetes {
+    flex: 1;
+}
+
+.faq-managing-diabetes h2 {
+    font-size: 2rem;
+    color: #2d3748;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.faq-managing-diabetes p {
+    color: #4a5568;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.faq-managing-diabetes ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.faq-managing-diabetes li {
+    color: #4a5568;
+    padding: 5px 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #58b4f0;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.footer-content {
+    color: #ffffff;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .hero, .faq-grid {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-content, .hero-image, .faq-photo, .faq-managing-diabetes {
+        flex: none;
+        width: 100%;
+    }
+    
+    .hero p {
+        margin: 0 auto 30px auto;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    header {
+        flex-wrap: wrap;
+    }
+    
+    nav {
+        order: 3;
+        width: 100%;
+        margin-top: 15px;
+    }
+    
+    nav ul {
+        justify-content: center;
+    }
+    
+    .diabetes-info, .faq-content {
+        padding: 30px 5%;
+    }
+    
+    .symptoms-section, .diabetes-types, .complications-section {
+        padding-left: 20px;
+    }
+    
+    .symptoms-list {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .btn-secondary {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+    
+    .diabetes-type, .complications-list li {
+        padding: 15px 2%;
+    }
+    
+    .symptoms-section, .diabetes-types, .complications-section {
+        padding-left: 10px;
+    }
+    
+    /* Keep the image size fixed even on small screens */
+    .symptoms-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .symptoms-image {
+        margin-top: 10px;
+        align-self: flex-end; /* Aligns the image to the right even when in column layout */
+    }
+    
+    .symptoms-image img {
+        /* Maintain the exact dimensions on all screen sizes */
+        width: 50px;
+        height: 100px;
+    }
+}
+
+/*faq
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f9ff;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.logo-letter {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav ul li a.active {
+    color: #007bff;
+}
+
+.cta-button .btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.cta-button .btn:hover {
+    background-color: #0056b3;
+}
+
+/* FAQ Hero Section */
+.faq-hero {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.faq-hero h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.faq-hero p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* FAQ Content Section */
+.faq-content {
+    padding: 50px 0;
+}
+
+.faq-grid {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.faq-items {
+    flex: 2;
+}
+
+.faq-items h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item summary {
+    padding: 15px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    font-weight: 600;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.faq-item summary:hover {
+    background-color: #f0f0f0;
+}
+
+.faq-item summary::after {
+    content: '\f078'; /* Font Awesome chevron-down */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: #007bff;
+    transition: transform 0.3s ease;
+}
+
+.faq-item[open] summary::after {
+    content: '\f077'; /* Font Awesome chevron-up */
+    transform: rotate(180deg);
+}
+
+.faq-item p {
+    padding: 15px;
+    background-color: #fff;
+    color: #666;
+    font-size: 16px;
+    transition: opacity 0.3s ease;
+}
+
+.faq-item[open] p {
+    opacity: 1;
+}
+
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #58b4f0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 14px;
+    color: #fffcfc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .faq-hero {
+        padding: 30px 0;
+    }
+
+    .faq-hero h1 {
+        font-size: 28px;
+    }
+
+    .faq-hero p {
+        font-size: 16px;
+    }
+
+    .faq-grid {
+        flex-direction: column;
+    }
+}
